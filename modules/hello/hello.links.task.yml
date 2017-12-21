@@ -1,0 +1,49 @@
+# Note entity routing definition
+note_entity.settings_tab:
+  route_name: note_entity.settings
+  title: 'Settings'
+  base_route: note_entity.settings
+
+entity.note_entity.canonical:
+  route_name: entity.note_entity.canonical
+  base_route: entity.note_entity.canonical
+  title: 'View'
+
+entity.note_entity.edit_form:
+  route_name: entity.note_entity.edit_form
+  base_route: entity.note_entity.canonical
+  title: 'Edit'
+
+entity.note_entity.version_history:
+  route_name: entity.note_entity.version_history
+  base_route: entity.note_entity.canonical
+  title: 'Revisions'
+
+entity.note_entity.delete_form:
+  route_name:  entity.note_entity.delete_form
+  base_route:  entity.note_entity.canonical
+  title: Delete
+  weight: 10
+
+# Produit entity routing definition
+produit_entity.settings_tab:
+  route_name: produit_entity.settings
+  title: 'Settings'
+  base_route: produit_entity.settings
+
+entity.produit_entity.canonical:
+  route_name: entity.produit_entity.canonical
+  base_route: entity.produit_entity.canonical
+  title: 'View'
+
+entity.produit_entity.edit_form:
+  route_name: entity.produit_entity.edit_form
+  base_route: entity.produit_entity.canonical
+  title: 'Edit'
+
+entity.produit_entity.delete_form:
+  route_name:  entity.produit_entity.delete_form
+  base_route:  entity.produit_entity.canonical
+  title: Delete
+  weight: 10
+

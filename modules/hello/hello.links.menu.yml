@@ -1,0 +1,35 @@
+
+# Note entity menu items definition
+entity.note_entity.collection:
+  title: 'Note entity list'
+  route_name: entity.note_entity.collection
+  description: 'List Note entity entities'
+  parent: system.admin_structure
+  weight: 100
+
+note_entity.admin.structure.settings:
+  title: Note entity settings
+  description: 'Configure Note entity entities'
+  route_name: note_entity.settings
+  parent: system.admin_structure
+
+# Produit entity menu items definition
+entity.produit_entity.collection:
+  title: 'Produit entity list'
+  route_name: entity.produit_entity.collection
+  description: 'List Produit entity entities'
+  parent: system.admin_structure
+  weight: 100
+
+produit_entity.admin.structure.settings:
+  title: Produit entity settings
+  description: 'Configure Produit entity entities'
+  route_name: produit_entity.settings
+  parent: system.admin_structure
+hello.product_settings_form:
+  title: 'ProductSettingsForm'
+  route_name: hello.product_settings_form
+  description: 'Setting product coniguration'
+  parent: system.admin_config_system
+  weight: 99
+

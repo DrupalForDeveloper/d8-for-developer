@@ -1,0 +1,13 @@
+services:
+  hello.hello_default:
+    class: Drupal\hello\Command\DefaultCommand
+    arguments: []
+    tags:
+      - { name: drupal.command }
+
+  hello.debug:
+    class: Drupal\hello\Command\DebugCommand
+    arguments: []
+    tags:
+      - { name: drupal.command }
+

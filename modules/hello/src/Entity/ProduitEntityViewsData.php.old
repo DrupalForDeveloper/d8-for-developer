@@ -1,0 +1,24 @@
+<?php
+
+namespace Drupal\hello\Entity;
+
+use Drupal\views\EntityViewsData;
+
+/**
+ * Provides Views data for Produit entity entities.
+ */
+class ProduitEntityViewsData extends EntityViewsData {
+
+  /**
+   * {@inheritdoc}
+   */
+  public function getViewsData() {
+    $data = parent::getViewsData();
+
+    // Additional information for Views integration, such as table joins, can be
+    // put here.
+
+    
+  }
+
+}

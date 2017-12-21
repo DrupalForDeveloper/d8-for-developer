@@ -1,0 +1,49 @@
+add note entity entities:
+  title: 'Create new Note entity entities'
+
+administer note entity entities:
+  title: 'Administer Note entity entities'
+  description: 'Allow to access the administration form to configure Note entity entities.'
+  restrict access: true
+
+delete note entity entities:
+  title: 'Delete Note entity entities'
+
+edit note entity entities:
+  title: 'Edit Note entity entities'
+
+view published note entity entities:
+  title: 'View published Note entity entities'
+
+view unpublished note entity entities:
+  title: 'View unpublished Note entity entities'
+
+view all note entity revisions:
+  title: 'View all Note entity revisions'
+
+revert all note entity revisions:
+  title: 'Revert all Note entity revisions'
+  description: 'Role requires permission <em>view Note entity revisions</em> and <em>edit rights</em> for note entity entities in question or <em>administer note entity entities</em>.'
+
+delete all note entity revisions:
+  title: 'Delete all revisions'
+  description: 'Role requires permission to <em>view Note entity revisions</em> and <em>delete rights</em> for note entity entities in question or <em>administer note entity entities</em>.'
+add produit entity entities:
+  title: 'Create new Produit entity entities'
+
+administer produit entity entities:
+  title: 'Administer Produit entity entities'
+  description: 'Allow to access the administration form to configure Produit entity entities.'
+  restrict access: true
+
+delete produit entity entities:
+  title: 'Delete Produit entity entities'
+
+edit produit entity entities:
+  title: 'Edit Produit entity entities'
+
+view published produit entity entities:
+  title: 'View published Produit entity entities'
+
+view unpublished produit entity entities:
+  title: 'View unpublished Produit entity entities'
