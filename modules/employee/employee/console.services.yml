@@ -1,0 +1,7 @@
+services:
+  employee.employee_default:
+    class: Drupal\employee\Command\DefaultCommand
+    arguments: []
+    tags:
+      - { name: drupal.command }
+
