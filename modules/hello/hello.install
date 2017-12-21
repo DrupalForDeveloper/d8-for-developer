@@ -1,0 +1,60 @@
+<?php
+
+/**
+ * @file
+ * The installer file, which creates the settings table to store BMI text.
+ */
+
+/**
+ * Implementation of hook_install().
+ */
+function hello_install() {
+
+for ($i=0; $i < 500 ; $i++) { 
+  # code...
+     $data = array(
+      'name' => makeRandomString() , 
+      'price' => rand(100,1000)." €" , 
+      'reference' => makeRandomString() , 
+      'mail' => 'nadir@fouka.ovh'
+    );
+
+
+    $node = \Drupal::entityManager()
+                    ->getStorage('produit_entity')
+                    ->create($data);
+    $node->save();
+    drupal_set_message('entity saved. id log '.$i);
+}
+
+}
+
+/**
+ * Implementation of hook_uninstall().
+ */
+function hello_uninstall() {
+  // Remove tables.
+  drupal_uninstall_schema('hello');
+}
+
+/**
+ * Implementation of hook_schema().
+ */
+function hello_schema() {
+
+}
+
+function makeRandomString($max=24) {
+    $i = 0; //Reset the counter.
+    $possible_keys = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    $keys_length = strlen($possible_keys);
+    $str = ""; //Let's declare the string, to add later.
+    while($i<$max) {
+        $rand = mt_rand(1,$keys_length-1);
+        $str.= $possible_keys[$rand];
+        $i++;
+    }
+    return $str;
+}
+
+?>
